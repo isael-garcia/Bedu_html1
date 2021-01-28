@@ -1,0 +1,35 @@
+body{
+    background-color: #fffbf7 ;
+}
+h1{
+ color:  #025157;    
+
+}
+.abajotitulo {
+    color: #46484c;
+}
+.promocional {
+   color: red;
+
+}
+form input{
+    border: 1px solid #b6b6b6;
+    padding: 6px 20px;
+    width: 60%;
+    max-width: 250px;
+    height: 55px;
+    border-radius: 8px;
+}
+form button{
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 6px 20px;
+    margin-left: -10px;
+    height: 55px;
+    box-sizing: border-box;
+
+}
+
