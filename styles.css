@@ -1,26 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #fffbf7 ;
+    display: block;
 }
 h1{
- color:  #025157;    
-
+    color: #025157;
+    font-family: "Alegreya", serif;
+    font-size: 60px;
+    margin-bottom: 24px;
 }
 .abajotitulo {
     color: #46484c;
+    font-family: "Slabo 27px", serif;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 .promocional {
    color: red;
 
 }
-form input{
+form {
+    height: 55px;
+  }
+  
+  input,
+  button {
+    height: 100%;
+    border-radius: 8px;
+  }
+  
+  input {
     border: 1px solid #b6b6b6;
     padding: 6px 20px;
     width: 60%;
     max-width: 250px;
-    height: 55px;
-    border-radius: 8px;
-}
-form button{
+  }
+  
+  button {
     background-color: #025157;
     color: #fff;
     border: none;
@@ -28,8 +49,70 @@ form button{
     border-bottom-left-radius: 0;
     padding: 6px 20px;
     margin-left: -10px;
-    height: 55px;
-    box-sizing: border-box;
+  }
 
+nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
 }
+nav ul li {
+    padding: 1rem;
+}
+nav ul li:hover {
+    background-color: #1a2770;
+}
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.contenedor { /* Contenedor Principal vendria a ser el contenedor del header */
+    background-color: white;
+    margin: 0px 1rem;
+    padding: 20px 0px 0 0px; 
+    height: 300px;
+}
+
+.contenedor-flex{ /* Contenedor padre donde desplegamos flexbox */
+    display: flex;/* Desplegamos flexbox  */
+    flex-direction: row;/* La direccion de los elementos va a ser en una fila */
+    justify-content: space-between;/* con este comando ponemos un elemento despues de otro */
+}
+
+.letras-nav{ /* Primer Elemento de Flexbox */
+    text-align: center; /* Alineamos al centro todo el texto de los elementos dentro de esta clase  */
+    font-family: "Open Sans", sans-serif;/* Le damos estilo al texto dentro de la clase */
+    align-self: center;/* alineamos verticalmente el contenido de la clase */
+    flex:2 0 auto; /* asignamos el tamaño del contenido en 2 espacion con un shrink de 0 y un tamaño automatico */
+}
+.letras-nav ul li{ /* agregamos mayor especificidad y formato a los elementos en este caso a una lista hacerla horizontal*/
+    display: inline; /* con este comando hacemos que los elementos de una lista se muestren de manera horizontal  */
+}
+
+.form-sign{/* Clase que se refiere al formulario superior que se encuentra en la nav bar */
+    text-align: right;/* alineamos el texto a la derecha para que concuerde con la alineacion del boton */
+    font-weight: 1000;/*  especifica el grosor del texto*/
+    font-size: 16px;/* Especifica el tamaño del texto */
+    color: #67b54b;
+}
+.form-sign button{/* clase con la especificidad para modificar el boton del formulario */
+    color: white; /* color del texto */
+    font-weight:700;/* grueso del texto */
+    font-size: 16px;/* tamaño de la fuente */
+    background-color: #67b54b;/* el color del boton */
+    padding-left: 14px;  /* DEFINIENDO EL TAMAÑO Y CONFIGURACION DEL BOTON */    
+    padding-right: 14px;/* DEFINIENDO EL TAMAÑO Y CONFIGURACION DEL BOTON */
+    padding-top: 12px;/* DEFINIENDO EL TAMAÑO Y CONFIGURACION DEL BOTON */
+    padding-bottom: 12px;/* DEFINIENDO EL TAMAÑO Y CONFIGURACION DEL BOTON */
+    border: 0; /* dejando el boton sin borde */
+    border-radius: 5px;/* le damos un redondel al boton */
+    margin-left: 10px;/* damos un espacio para ajustarlo con el texto de la izquierda */
+}
+.logo-nav{ /* otro elemento la clase donde se encuentra la imagen del logo superior de la navbar */
+    align-self: center;/* la ajustamos verticalmente para que coincida con los demas elementos */
+}
+
+
 
