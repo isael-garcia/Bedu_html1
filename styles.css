@@ -14,6 +14,18 @@ h1{
     font-size: 60px;
     margin-bottom: 24px;
 }
+h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
 .abajotitulo {
     color: #46484c;
     font-family: "Slabo 27px", serif;
@@ -51,6 +63,7 @@ form {
     margin-left: -10px;
   }
 
+
 nav ul {
     list-style:none;
     margin:0;
@@ -72,13 +85,19 @@ nav ul a {
     background-color: white;
     margin: 0px 1rem;
     padding: 20px 0px 0 0px; 
-    height: 300px;
+    height: auto;
 }
 
 .contenedor-flex{ /* Contenedor padre donde desplegamos flexbox */
     display: flex;/* Desplegamos flexbox  */
     flex-direction: row;/* La direccion de los elementos va a ser en una fila */
     justify-content: space-between;/* con este comando ponemos un elemento despues de otro */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: white;
 }
 
 .letras-nav{ /* Primer Elemento de Flexbox */
@@ -96,6 +115,7 @@ nav ul a {
     font-weight: 1000;/*  especifica el grosor del texto*/
     font-size: 16px;/* Especifica el tamaño del texto */
     color: #67b54b;
+    padding-right: 20px;/* agregando un espacio entre la barra de navegacion para facilitar el manejo */
 }
 .form-sign button{/* clase con la especificidad para modificar el boton del formulario */
     color: white; /* color del texto */
@@ -114,5 +134,74 @@ nav ul a {
     align-self: center;/* la ajustamos verticalmente para que coincida con los demas elementos */
 }
 
+.contenedor2{
+    margin-top: 285px;
+    text-align: center;
+}
 
+.figure{
+    display: block;
+}
+.promocional{
+    margin-top: 13px;
+}
+
+.logo-matcha img{
+    width: 70%;
+    margin-top: 33px;
+}
+
+/* PARTE 3 DE LA PAGINA LOS VIDEOS E INFORMACION */
+
+.video{
+    display: flex;
+    max-width: 70%;
+    margin: 100px auto;
+    align-items: center;
+    /* align-content: space-between; */
+}
+video{
+    object-fit: contain;
+}
+.explicacion-video{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+}
+.explicacion-video img{
+    width: 120px;
+    margin-top: 10px;
+}
+article{
+    display: block;
+}
+.publish{
+    flex: 1;
+    flex-grow: 2;
+}
+.publish h3{
+    font-family: "Alegreya", serif ;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+    font-weight:  900;;
+}
+.informacion{
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+p{
+    color: #8b8b8bcc; 
+    margin-top: 15px;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
