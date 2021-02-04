@@ -43,7 +43,7 @@ form {
   input,
   button {
     height: 100%;
-    border-radius: 8px;
+    border-radius: 6px;
   }
   
   input {
@@ -73,7 +73,7 @@ nav ul li {
     padding: 1rem;
 }
 nav ul li:hover {
-    background-color: #1a2770;
+    background-color: #5e606b;
 }
 nav ul a {
     color: white;
@@ -81,19 +81,13 @@ nav ul a {
     font-size: 1.1rem;
 }
 
-.contenedor { /* Contenedor Principal vendria a ser el contenedor del header */
-    background-color: white;
-    margin: 0px 1rem;
-    padding: 20px 0px 0 0px; 
-    height: auto;
-}
 
 .contenedor-flex{ /* Contenedor padre donde desplegamos flexbox */
     display: flex;/* Desplegamos flexbox  */
     flex-direction: row;/* La direccion de los elementos va a ser en una fila */
     justify-content: space-between;/* con este comando ponemos un elemento despues de otro */
     position: fixed;
-    top: 0;
+    top: 5px;
     right: 0;
     left: 0;
     z-index: 1030;
