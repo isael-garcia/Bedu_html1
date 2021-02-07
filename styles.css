@@ -3,10 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
 body{
     background-color: #fffbf7 ;
     display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 h1{
     color: #025157;
@@ -87,7 +90,7 @@ nav ul a {
     flex-direction: row;/* La direccion de los elementos va a ser en una fila */
     justify-content: space-between;/* con este comando ponemos un elemento despues de otro */
     position: fixed;
-    top: 5px;
+    top: 0px;
     right: 0;
     left: 0;
     z-index: 1030;
@@ -197,5 +200,77 @@ p{
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+.contenedor-tarjetas{
+    background-color: #025157;
+    padding: 5% 10%;
+    display: grid;
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+}
+
+.contenedor-tarjetas .fe-cards{
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contenedor-tarjetas .fe-cards .tarjeta-info{
+    
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    flex: 2;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.contenedor-tarjetas .fe-cards .tarjeta-info > *{
+    margin-bottom: 1rem;
+    margin-top: 0px;
+}
+.contenedor-tarjetas .fe-cards .tarjeta-info img{
+    width: 50px;
+}
+.contenedor-tarjetas .fe-cards .tarjeta-info h3{
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+}
+.contenedor-tarjetas .fe-cards .tarjeta-info p{
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+.contenedor-tarjetas .fe-cards .tarjeta-info a{
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+/* SECCION 1 IMAGEN */
+
+.contenedor-tarjetas .fe-cards .tarjeta-imagen{
+    flex: 1;
+    width: 40%;
+    position: relative;
+    right: -50px;
+    height: 80%;
+}
+.contenedor-tarjetas .fe-cards .tarjeta-imagen figure{
+    margin-top: 0px;
+    height: 100%;
+}
+.contenedor-tarjetas .fe-cards .tarjeta-imagen img{
+    margin-top: 0;
+    height: 100%;
 }
 
