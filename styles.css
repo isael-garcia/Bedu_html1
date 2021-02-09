@@ -76,7 +76,7 @@ nav ul li {
     padding: 1rem;
 }
 nav ul li:hover {
-    background-color: #5e606b;
+    background-color: #e6e6e6;
 }
 nav ul a {
     color: white;
@@ -113,6 +113,9 @@ nav ul a {
     font-size: 16px;/* Especifica el tamaño del texto */
     color: #67b54b;
     padding-right: 20px;/* agregando un espacio entre la barra de navegacion para facilitar el manejo */
+}
+.form-sign a:hover{
+    color: cornflowerblue;
 }
 .form-sign button{/* clase con la especificidad para modificar el boton del formulario */
     color: white; /* color del texto */
@@ -160,12 +163,18 @@ nav ul a {
 video{
     object-fit: contain;
 }
+.publish >p{
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
 .explicacion-video{
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-right: 20px;
+    align-items: center; /* Alinea elementos de la barra de controles del video*/
 }
 .explicacion-video img{
     width: 120px;
@@ -176,7 +185,6 @@ article{
 }
 .publish{
     flex: 1;
-    flex-grow: 2;
 }
 .publish h3{
     font-family: "Alegreya", serif ;
@@ -185,12 +193,7 @@ article{
     color: #025157;
     font-weight:  900;;
 }
-.informacion{
-    font-size: 16px;
-    color: #343434;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
+
 p{
     color: #8b8b8bcc; 
     margin-top: 15px;
@@ -202,6 +205,7 @@ p{
     margin-inline-end: 0px;
 }
 
+    /* 4 parte grid */
 .contenedor-tarjetas{
     background-color: #025157;
     padding: 5% 10%;
